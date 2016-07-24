@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	body,ul,li{
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+	body{
+		background: #CDCDCD;
+		font-family: "微软雅黑";
+	}
+	.nav-out{
+		height: 50px;
+		background: #323232;
+	}
+	.nav-out .nav{
+		width: 600px;
+		margin: 0 auto;
+	}
+	.nav .logo{
+		float: left;
+		font-size: 24px;
+		line-height: 50px;
+		color: #fff;
+		cursor: pointer;
+	}
+	.nav .val{
+		float: right;
+		padding: 0;
+		border: 0;
+		box-sizing:border-box;
+		height: 27px;
+		margin-top: 11px;
+		width: 360px;
+		border-radius: 5px;
+		box-shadow: inset 0 0px 2px 2px #ccc;
+		padding: 0 10px;
+	}
+	.now{
+		height: 60px;
+		width: 600px;
+		margin: 0 auto;
+	}
+	.com{
+		height: 60px;
+		width: 600px;
+		margin: 0 auto;
+	}
+	.title{
+		height: 60px;
+		line-height: 60px;
+		float: left;
+		font-size: 24px;
+	}
+	.num{
+		float: right;
+		font-size: 20px;
+		line-height: 60px;
+	}
+	.nowul,.comul{
+		width: 600px;
+		margin: 0 auto;
+	}
+	.nowul li,.comul li{
+		box-sizing:border-box;
+		margin-bottom: 10px;
+		height: 30px;
+		background: #fff;
+		padding-left: 10px;
+		width: 600px;
+		border-radius: 5px;
+	}
+	.comul li{
+		opacity: 0.5;
+	}
+	.check{
+		float: left;
+		width: 24px;
+		height: 24px;
+
+	}
+	.text{
+		float: left;
+		line-height: 30px;
+	}
+	.del{
+		float: right;
+		font-size: 20px;
+		font-weight: bold;
+		margin-right: 5px;
+	}
+	</style>
+</head>
+<body>
+	<div class="nav-out">
+		<div class="nav">
+			<div class="logo">
+				ToDoList
+			</div>
+			<input type="text" class="val" placeholder="添加ToDo">
+		</div>
+	</div>
+	<div class="now">
+		<div class="title">
+			正在进行
+		</div>
+		<div class="num num1">
+			0
+		</div>
+	</div>
+	<ul class="nowul">
+		<!-- <li>
+			<input type="checkbox" class="check">
+			<div class="text">1111</div>
+			<div class="del">--</div>
+		</li> -->
+	</ul>
+	<div class="com">
+		<div class="title">
+			已经完成
+		</div>
+		<div class="num num2">
+			0
+		</div>
+	</div>
+	<ul class="comul">
+		<!-- <li>
+			<input type="checkbox" class="check">
+			<div class="text">1111</div>
+			<div class="del">--</div>
+		</li> -->
+	</ul>
+</body>
+<script src="index.js"></script>
+</html>
